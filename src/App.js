@@ -37,10 +37,6 @@ class App extends React.Component{
     return (
       <ThemeProvider theme={globalTheme(this.state.selectedThemeMode)}>
         <CssBaseline />
-        <Fab variant="extended" sx={this.fabStyle} color="primary" aria-label="add" onClick={this.toggleThemeMode}>
-          {selectedThemeMode} 
-          {selectedThemeMode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
-        </Fab>
         {routes}
       </ThemeProvider>
     );
