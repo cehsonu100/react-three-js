@@ -15,12 +15,4 @@ export default function configureStore(preloadedState, history) {
     preloadedState,
     composeEnhancer(...enhancers),
   )
-
-  // Hot reloading
-  // if (module.hot) {
-  //   // Enable Webpack hot module replacement for reducers
-  //   module.hot.accept('./utils/rootReducer', () => {
-  //     store.replaceReducer(createRootReducer(history));
-  //   });
-  // }
 }
