@@ -7,7 +7,7 @@ import Home from "../containers/Home";
 const routes = (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />}/>
+      <Route path="/" element={<HelloWorld />}/>
       <Route path="/helloworld" element={<HelloWorld />}/>
       <Route path='*' element={<NoMatch />} />
     </Routes>
