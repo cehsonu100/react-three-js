@@ -27,8 +27,8 @@ const appReducer = (state = initialState, action) =>
         draft.helloValue = state.helloValue + parseInt(action.incrementalValue);
         break;
       default:
-        console.log(action.type + " is not defined");
-        console.log("Action -> ", action);
+        // console.log(action.type + " is not defined");
+        // console.log("Action -> ", action);
         break;
     }
   });
